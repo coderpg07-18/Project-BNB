@@ -1,0 +1,5 @@
+# Git Inbuilt Fn. to ignore commit or any kind of change in the files -- Mentioned Here.
+
+.env
+node_modules/
+**/.DS_Store
