@@ -9,11 +9,11 @@ const { validateReview, isLoggedIn, isReviewAuthor } = require("../middleware.js
 const reviewController = require("../controllers/review.js");
 
 router.post("/", isLoggedIn, validateReview,
-  wrapAsync( reviewController.createListing )
+  wrapAsync( reviewController.createReview )
 );
 
 router.delete("/:reviewId", isLoggedIn, isReviewAuthor,
-  wrapAsync( reviewController.destroyListing ),
+  wrapAsync( reviewController.destroyReview ),
 );
 
 
